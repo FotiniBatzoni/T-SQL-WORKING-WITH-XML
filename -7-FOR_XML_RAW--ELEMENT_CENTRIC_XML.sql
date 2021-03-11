@@ -1,0 +1,10 @@
+
+
+--CREATING ELEMENT-CENTRIC XML USING XML RAW
+ 
+USE AdventureWorks2012; 
+GO 
+ 
+SELECT TOP 5 FirstName, LastName 
+FROM Person.Person
+ FOR XML RAW ('NAME'), ELEMENTS 
